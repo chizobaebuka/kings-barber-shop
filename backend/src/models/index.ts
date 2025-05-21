@@ -8,12 +8,6 @@ import Service from "./service.model";
 import User from "./user.model";
 import sequelize from '../config/db';
 
-// const sequelize = new Sequelize(process.env.DB_NAME!, process.env.DB_USER!, process.env.DB_PASSWORD!, {
-//     host: process.env.DB_HOST,
-//     dialect: 'postgres', // Ensure this matches your database dialect
-//     logging: console.log, // Log SQL queries for debugging
-// });
-
 // Initialize models
 User.initModel(sequelize);
 Location.initModel(sequelize);
